@@ -1,0 +1,7 @@
+1-  Installare dal sito...
+2-  Eseguire il .exe di installazione
+3-  Aprire una cartella dove si esegue la webapp
+4-  Collegarsi al sito https://webpack.js.org/guides/getting-started/
+5-  Seguire i passi nel cmd della cartella
+6a- Creare sul database firebase la webapp
+6b- bisogna avere il database firebase creato 
