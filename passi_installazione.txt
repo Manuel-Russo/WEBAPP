@@ -5,3 +5,4 @@
 5-  Seguire i passi nel cmd della cartella
 6a- Creare sul database firebase la webapp
 6b- bisogna avere il database firebase creato 
+7- una volta aperto il cmd nella cartella scelta, per runnare il programma modificato: "npm run build"
