@@ -6,13 +6,14 @@ import { getDatabase, ref, onValue} from "firebase/database";
 var $ = require('jquery');  //per jQuery senò non le scarica
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCETuHC0yl4xJ59Ox6fm7IYO-2dvp1X17Q",
-  authDomain: "gabrach-25273.firebaseapp.com",
-  databaseURL: "https://gabrach-25273-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "gabrach-25273",
-  storageBucket: "gabrach-25273.appspot.com",
-  messagingSenderId: "716936233864",
-  appId: "1:716936233864:web:5b494fbe9337b5e943b03d"
+  apiKey: "AIzaSyA85vz6cMDje67KIxJzWCzpDABZmySzA5o",
+  authDomain: "bargabrach.firebaseapp.com",
+  databaseURL: "https://bargabrach-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "bargabrach",
+  storageBucket: "bargabrach.appspot.com",
+  messagingSenderId: "950724918886",
+  appId: "1:950724918886:web:ae6090c7bf363e1584b7a7",
+  measurementId: "G-KZ26VCVKN8"
 };
 
 // Initialize Firebase
@@ -25,10 +26,13 @@ onValue(prodottiRef,(snapshot)=>{
     //un oggetto in javascript puo essere usato indifferentemente con la dot notation o come i dictionari di pyton infatti posso scrivere al posto k  in questo modo
     //snapshot.val()[k][nome]
     $('#contenuto').append("<tr>"+"<td>"+k+"</td>"+"<td>"+snapshot.val()[k].nome+"</td>"+"<td>" + "<button class='botAlert'>Schiaccia qui</button>" + "</td>"+"</tr>");
+    $('.botAlert').onclick = function() {
+      console.log("fail");
+      alert('Never Gonna Give You Up');
+    };
+  
   }
-  $('.botAlert').onclick = function() { 
-    alert('Never Gonna Give You Up');
-  };
+  
 });
 
 
