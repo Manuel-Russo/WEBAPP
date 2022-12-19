@@ -15,6 +15,18 @@
     "webpack-cli": "^5.0.0"
   },
   "dependencies": {
-    "firebase": "^9.14.0"
+    "autoprefixer": "^10.4.13",
+    "bootstrap": "^5.2.3",
+    "css-loader": "^6.7.2",
+    "firebase": "^9.14.0",
+    "jquery": "^3.6.1",
+    "loadash": "^1.0.0",
+    "lodash": "^4.17.21",
+    "node-sass-import": "^2.0.1",
+    "postcss-loader": "^7.0.2",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack-dev-server": "^4.11.1"
   }
 }
